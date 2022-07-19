@@ -75,7 +75,7 @@ nav li a {
     text-decoration: none;
 }
 .img {
-    background-image: url('../imagens/background.png');
+    background-image: url('../imagens/background2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right top;
@@ -93,50 +93,13 @@ main {
     margin: auto;
 }
 
-main h1 {
-    text-align: center;
-    font-variant: small-caps;
-    margin: 30px 0;
-}
-main h2 {
-    border-bottom: 1px solid rgba(136, 136, 136, 0.466);
-    color: #474747;
-    font-variant: small-caps;
-}
-.cont {
-    /*background-color: rgba(238, 238, 238, 0.473);*/
-    margin: 10px 0;
-    padding: 10px;
-    box-shadow: inset 1px 1px 3px rgba(148, 148, 148, 0.562);
-}
-.p-cont {
-    margin-top: 10px;
-    display: flex;
-}
-.cont p {
-    border: 1px solid rgba(223, 223, 223, 0.616);
-    border-radius: 0px 20px 0px 20px;
-    text-align: justify;
-    padding: 8px;
-}
-.imagem img{
-    border-radius: 5px;
-    max-width: 100px;
-    max-height: 100px;
-}
-.imagem {
-    margin-right: 10px;
-}
-.saiba {
-    font-size: 12px;
-    background-color: rgb(255, 64, 6);
-    padding: 5px;
-    border-radius: 10px;
-}
-.saiba a {
-    color: #fff;
-    text-decoration: none;
-}
+
+
+
+
+
+
+
 
 /* FOOTER */
 
