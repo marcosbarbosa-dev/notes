@@ -172,6 +172,9 @@ footer a {
 }
 
 @media (max-width:1100px) {
+    .img {
+        background-position: center center;
+    }
     .nav-bar {
         padding: 5px;
         display: flex;
