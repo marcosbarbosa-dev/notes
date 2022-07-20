@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 02</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 480px)" href="../mobile.css">
+    <style>
+        p#hover:hover {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <a href="../index.html"><li>HOME</li></a>
+                <a href="../media.html"><li>MÍDIAS</li></a>
+                <a href="../videos.html"><li>VÍDEOS</li></a>
+                <a href="../cores.html"><li>CORES</li></a>
+                <a href="../tipografia.html"><li>TIPOGRAFIA</li></a>
+            </ul>
+        </nav>
+    </header>
+<main>
+<h1>Módulo 02</h1>
+<h2>Cores Gradientes ex016</h2>
+    <p><code>background-image: linear-gradient(to right, #0099DD, #00ABBD);</code> <br>
+    Dentro do CSS, colocamos o código e diremos a direção para aonde o gradiente deve seguir, juntamente com as duas ou mais cores.</p>
+    <hr>
+
+<h2>Cores</h2>
+    <p>A harmonia de cores é fundamental na escolha da paleta de cores para o seu site. Acessando o link abaixo, ou a guia "cores", iremos o circulo cromático.</p>
+    <a href="../cores.html"><p>cores.html</p></a>
+    <hr>
+
+<h2>Anatomia do Tipo</h2>
+    <p></p>
+    <a href="../tipografia.html"><p>tipografia.html</p></a>
+    <hr>
+
+<h2>Fontes em CSS ex017</h2>
+    <p>Adicionamos dentro do nosso CSS o <code>body {font-family: 'fonte';}</code>. Importante ressaltar que quando a fonte possuir duas ou mais palavras, devem estar dentro de aspas simples.</p>
+    <p>
+    Exemplo: <br>
+    <code>body { font-family: Arial; }</code>. <br>
+    <code>body { font-family: 'Times New Roman'; }</code>
+    </p>
+    <p>Geralmente usamos o seguinte tipo de declaração, chamada de safe combination (combinação segura): <br>
+    <code>body { font-family: Arial, Helvetica, sans-serif; }</code>, pois, se caso o dispositivo não encontrar a fonte <em>Arial</em>, ele buscará pela fonte <em>Helvetica</em>, ou <em>sans-serif</em>. <br>
+    Podemos pesquisar no google por: <a href="http://w3schools.com/cssref/css_websafe_fonts.asp/" target="_blank">"css web safe font combinations"</a>.
+    <p>Para mais, acesse a página <a href="tipografia.html">tipografia</a></p>
+    <p>Site para detectar fontes em imagens: <a href="http://www.whatfontis.com/" target="_blank">whatfontis.com</a></p>
+    <hr>
+<h2>Alinhamento de Textos</h2>
+    <ul>
+        <li>text-align: left/center/right/justify;  -  serve para alinhas os textos.</li>
+        <li>text-indent: 00px;  -  serve para criar um parágrafo com base nos pixels.</li><br>
+        <code>h1 { <br> 
+        text-align: center; <br>
+        text-ident: 30px; <br>
+        }
+        </code>
+        <hr>
+<h2>Seletores ex019</h2>
+        <ul>
+            <li>ID = (#) - identificação. </li>
+            <li>CLASS = (.) - classe</li>
+        </ul>
+        <p><strong>REGRA:</strong> Em um mesmo documento HTML, só podemos usar um id para um único elemento, diferente do class.</p>
+<h2>Pseudo-classes ex020</h2>
+        <p>Pseudo-classes são relacionadas ao estado de um determinado elemento. Elas são respresentadas pelos (:), asscom como a id é o (#) e as classes são o (.);</p>
+        <ul>
+            <li>:hover - significa que quando passar o mouse por um elemento, acontecerá algo.</li>
+            <li>:visited</li>
+            <li>:active</li>
+            <li>:checked</li>
+            <li>:empty</li>
+            <li>:focus</li>
+        </ul>
+        <p id="hover">Exemplo de :hover - Passe o mouse por cima desse texto.</p>
+    </ul>
+
+<h3>Informações sobre o que foi visto na aula</h2>
+  <ul>
+    <li># = id</li>
+    <li>. = class</li>
+    <li>: = pseudo-class</li>
+    <li>:: = pseudo-element</li>
+    <li>> = children (filho)</li>
+  </ul>
+  <p>Exemplos: <a href="classes/pseudoclasses.html">Pseudoclasses.html</a></p>
+    <hr>
+<h2>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os links <a href="#">são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona</p>
+    <a href="box/box-level.html">Clique aqui</a>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <a href="../index.html"><p style="text-align: center;">Voltar</p></a>
+</main>
+</body>
+</html>

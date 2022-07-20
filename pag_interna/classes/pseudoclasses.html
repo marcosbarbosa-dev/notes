@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 480px)" href="../../mobile.css">
+    <style>
+    /*<h2>Visited e Hover</h2>*/
+        a {
+            font-weight: bold; /*Definindo negrito na fonta*/
+            text-decoration: none; /*Removendo sublinhado do texto*/
+            color: red; /*Definindo a cor do texto para vermelha*/
+        }
+        a:visited { /* pseudo-classe definindo sobre um link que já foi visitado */
+            color: darkblue; /*significa que depois que um link "a", já foi visitado ":visited", a cor ficará darkblue */
+        }
+        a:hover { /*hover é sobre aparecer algo quando passamos o mouse*/
+            text-decoration: underline; /*definimos uma decoração pro texto, que, ao passar o mouse, aparecerá um sublinhado "underline" */
+        }
+    /*<h2>Hover</h2> - <h3>Exemplo 01</h3>*/
+        p#hover:hover {
+            color: white; /*cor da fonte ao passar o mouse*/
+            background-color: brown; /*cor do fundo ao passar o mouse*/
+            width: 250px; /*largura da função hover, apenas pra não pegar toda tela lateral*/
+        }
+    /*<h2>Hover</h2> - <h3>Exemplo 02</h3>*/
+        div#oculto > p /* o "> p" sinaliza que o "div#01" possui uma filha, chamada de "p"*/ {
+            display: none; /*significa o parágrafo ficara oculto*/
+        }
+        div#oculto:hover > p { /*siginifica que quando passarmos o mous pelo parágrafo, algo acontecerá*/
+            display: block; /*significa que ele deixará de ser oculto*/
+            color: white; /*significa que ao passar o mouse o texto ficará branco */
+            background-color: black; /*ao passar o mouse, o fundo ficará preto*/
+            width: 250px; /*que ocupará uma largura de 250px*/
+        }
+        div#oculto:hover {
+            color: red; /*significa que ao passar o mouse, o texto "PASSE O MOUSE AQUI" ficará vermelho*/ 
+        }
+    /*<h2>Active</h2>*/
+        p#active:active a {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <main>
+    <a href="../modulo_2.html"><p style="text-align: right;">Voltar</p></a>
+
+    <h1>Exemplos de Pseudo-classe ex020</h1>
+    <p style="text-align: center;">Para visualizar, acessar o código fonte.</p>
+    <p style="font-weight: bolder;"><em>Pseudo-classes são palavras que definem estados de elementos dentro do HTML</em></p>
+
+<h2>Visited e Hover</h2>
+    <a href="../../index.html">Este é um link para a página HOME</a> <br>
+    <a href="../../cores.html">Este é um link para a página CORES</a> <br>
+    <a href="../../media.html">Este é um link para a página MEDIA</a> <br>
+    <a href="http://www.microsoft.com.br">Não acesse o link, só veja a cor</a>
+        <p>Acima foi usado o hover e o visited</p>
+
+<h2>Hover</h2>
+<h3>Exemplo 01</h3>
+    <p id="hover">PASSE O MOUSE AQUI</p>
+
+<h3>Exemplo 02</h3>
+    <div id="oculto">
+        Passe o mouse aqui
+        <p>Texto escondido....</p>
+  </div>
+    <p>Fim do exemplo</p>
+<h2>Active</h2>
+  <p>Tem a função de mudar o objeto quando mantemos o botão do mouse pressionado. Serve para dar o efeito de diminuição de um botão ao clicá-lo e também mudar a cor de um link ao clicá-lo (ao soltar o mouse retorna a sua cor nativa).</p>
+  <p>Exemplo:</p>
+  <p id="active"><a href="../../index.html" target="_blank">Página Inicial - Clique e segure</a></p>
+
+<h2>Informações sobre o que foi visto na aula</h2>
+  <ul>
+    <li># = id</li>
+    <li>. = class</li>
+    <li>: = pseudo-class</li>
+    <li>:: = pseudo-element</li>
+    <li>> = children (filho)</li>
+  </ul>
+    <a href="../modulo_2.html"><p style="text-align: center;">Voltar</p></a>
+</main>
+</body>
+</html>

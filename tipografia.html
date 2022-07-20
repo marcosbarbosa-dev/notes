@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/pages.css">
-    <title>NotesDev - Tipográfia</title>
+    <title>DevNotes - Tipográfia</title>
+
 </head>
 <body>
    <div class="container">
@@ -19,17 +20,18 @@
                 </ul>
             </div>
             <div class="logo">
-                <h1>NOTES<span>DEV</span></h1>
+                <h1><span>DEV</span>NOTES</h1>
                 <p>marcosbarbosa-dev</p>
             </div>
             <nav class="nav-bar">
                 <ul class="nav-menu">
                     <li class="nav-item"><a href="index.html" target="_self">Home</a></li>
-                    <li class="nav-item""><a href="html.html" target="_self">HTML</a></li>
-                    <li class="nav-item""><a href="css.html" target="_self">CSS</a></li>
-                    <li class="nav-item""><a href="javascript.html" target="_self">JavaScript</a></li>
-                    <li class="nav-item""><a href="cores.html" target="_self">Cores</a></li>
-                    <li class="nav-item""><a href="tipografia.html" target="_self">Tipografia</a></li>
+                    <li class="nav-item"><a href="html.html" target="_self">HTML</a></li>
+                    <li class="nav-item"><a href="midias.html" target="_self">Mídias</a></li>
+                    <li class="nav-item"><a href="css.html" target="_self">CSS</a></li>
+                    <li class="nav-item"><a href="javascript.html" target="_self">JavaScript</a></li>
+                    <li class="nav-item"><a href="cores.html" target="_self">Cores</a></li>
+                    <li class="nav-item"><a href="tipografia.html" target="_self">Tipografia</a></li>
                 </ul>
                 <div class="hamburguer">
                     <span class="bar"></span>
@@ -38,6 +40,156 @@
                 </div>
             </nav>
         </header>
+        <main>
+            <h1>Estudo Básico da Tipografia</h1>
+            <div class="conteudo">
+                <h2>Anatomia do tipo</h2>
+                    <h3>Itens métricos</h3>
+                        <img src="imagens/tipografia/medida-das-fontes.jpg" alt="medidas da fonte">
+                        <p>Curiosidade: a letra "x" é o ponto de partida para todas as fontes. O primeiro passo quando se vai criar uma fonte é desenhar o "x" minúsculo, pois existe uma métrica chamada "altura x", que vai definir a altura base de todas as letras minúsculas, com base na letra "x". São exemplos acimas, itens métricos.</p>
+                        <h3>Itens anatômicos</h3>
+                        <img src="imagens/tipografia/serifa.jpg" alt="serifas">
+                        <p>Obs: Nem todas as fontes tem os componentes, como a serifa.</p>
+                        <p>A serifa é um pequeno traço que gera no final de algumas fontes. Ela cria uma linha imaginária (como a linha pontilhada na foto)</p>
+                        <p>Ela serve para guiar sua leitura, facilitando o trabalho do nosso cerebro. Dando um exemplo, como o texto abaixo, não importa a ordem das letras dentro de uma palavra, pois o nosso cerebro consegue ler perfeitamente o que está escrito, com a ajuda da serifa. Não significa que sem serifa não conseguiríamos, mas a serifa traz uma facilidade maior para termos uma boa leitura guiada.</p>
+                        <img src="imagens/tipografia/texto.png" alt="texto com letras alteradas"> 
+                <h2>Partes geométricas</h2>
+                    <h3>Componentes anatomicos geométricos:</h3>
+                    <img src="imagens/tipografia/anatomicos-geometricos.jpg" alt="componentes anatomicos geométricos">
+                    <ul>
+                        <li>haste</li>
+                        <li>filete</li>
+                        <li>arco</li>
+                        <li>esporão</li>
+                        <li>vértice</li>
+                    </ul>
+                <h3>Componentes que correspondem a partes do corpo</h3>
+                <img src="imagens/tipografia/anatomicos-corpo.jpg" alt="componentes do corpo">
+                <ul>
+                    <li>braço</li>
+                    <li>perna</li>
+                    <li>pé</li>
+                    <li>espinha</li>
+                    <li>barriga</li>
+                    <li>olho</li>
+                    <li>orelha</li>
+                    <li>calda</li>
+                </ul>
+                <p>Glifos: cada letra é um glifo, sendo o conjunto de todos os glifos de uma determinada família, chamamos ele de fonte.</p>
+                    <h2>Família tipográfica</h2>
+                    <p>São vários formatos de uma mesma fonte, como: light, normal, seminegrito, negrito, extrangrito, itálico. Porém, nem todas fontes possuem uma família tipográfica grande.</p>
+                    <h2>Categorias de Fontes</h2>
+                    <img src="imagens/tipografia/categoria-de-fontes.jpg" alt="categoria de fontes">
+                    <ul>
+                        <li>Srifadas: fonte serifada.</li>
+                        <li>Sans-serif: sem serifa (sans-serif vem do frânces).</li>
+                        <li>Monoespaçadas: o tamanho lateral são iguais de uma letra para a outra.</li>
+                        <li>Handwriting: fonte de script, fonte escriptada; tenta simular a escritura a mão, a caligrafia humana.</li>
+                        <li>Display: fontes comemorativas, aquela que não se preocupa a obedecer as regras anatomicas. Geralmente são fontes que te levam a uma ideia ou a um filme.</li>
+                    </ul>
+                    <p><strong>IMPORTANTE:</strong> A recomendação é que se use em textos muitos longos para impressão em tela, dê preferência com fontes sans-serif, e tomar cuidado com fontes com espaços laterais muitos curtos para não gerar uma leitura comoda. E devemos usar o contraste de cor para aplicar nas leituras. <br> Recomenda-se: branco no fundo e preto na tela.</p>
+                
+                        <h2>Fontes em CSS ex017</h2>
+                    <p>Adicionamos dentro do nosso CSS o <code>body {font-family: 'fonte';}</code>. Importante ressaltar que quando a fonte possuir duas ou mais palavras, devem estar dentro de aspas simples.</p>
+                    <p>
+                    Exemplo: <br>
+                    <code>body { font-family: Arial; }</code>. <br>
+                    <code>body { font-family: 'Times New Roman'; }</code>
+                    </p>
+                    <p>Geralmente usamos o seguinte tipo de declaração, chamada de safe combination (combinação segura): <br>
+                    <code>body { font-family: Arial, Helvetica, sans-serif; }</code>, pois, se caso o dispositivo não encontrar a fonte <em>Arial</em>, ele buscará pela fonte <em>Helvetica</em>, ou <em>sans-serif</em>. <br>
+                    Podemos pesquisar no google por: <a href="http://w3schools.com/cssref/css_websafe_fonts.asp/" target="_blank">"css web safe font combinations"</a>.
+                    <p>Um outro exemplo, de uma forma genérica, podemos dizer ao navegador que queremos apenas uma fonte sem serifa: <code>font-family: sans-serif;</code>, então todos dispositivos poderão ler, pois todos dispositivos têm fontes serifadas.</p>
+                    <ul>
+                        <p>Podemos usar também:</p>
+                        <li>sans-serif;</li>
+                        <li>serif;</li>
+                        <li>monospace;</li>
+                    </ul>
+                    O ideal também é, sempre terminar a safe combination com uma generica, que são as acimas citadas. Exemplo: <code>body { font-family: Arial, Helvetica, <strong>monospace</strong>; }</code>
+                    </p>
+                        <h2>Font-Size</h3>
+                    <p>No font-size, temos as medidas:
+                        <ul>
+                            <li>Medidas absolutas</li>
+                                <ol>
+                                    <li>cm</li>
+                                    <li>mm</li>
+                                    <li>in : polegada</li>
+                                    <li>px</li>
+                                    <li>pt</li>
+                                    <li>pc</li>
+                                    <p>Ponto (pt) e paica (pc), são medidas da tipografia de papel (não é recomendado utilizar em material exibido em telas).</p>
+                                </ol> <br>
+                            <li>Medidas Relativas</li>
+                                <ol>
+                                    <li>em : relativa ao M maiúsculo de uma determinada fonte;</li>
+                                    <li>ex : relativa ao x de uma determinada fonte;</li>
+                                    <li>rem : igual ao em, porém relativa a fonte que está configurada no 'body';</li>
+                                    <li>vw : view width, largura da view port</li>
+                                    <li>vh: altura da view port</li>
+                                    <li>% : porcentagem</li>
+                                    <li>...</li>
+                                </ol>
+                        </ul>
+                        <strong>Obs</strong>: Vamos geralmente trabalhar com a 'em'. Mas recomenda-se (w3schools) apenas o uso do 'px' e 'em'.
+                    </p>
+                    <p>Geralmente o tamanho comum da fonte é de 16px</p>
+                
+                        <h2>Variações</h2>
+                <h3>font-weight</h3>
+                
+                    <p>font-weight - peso da fonte. <br>
+                    Existem alguns pesos literais. São eles: lighter, normal, bold, bolder. <br>
+                    Há também as variações númericas que começam em 100 e terminam em 900. <br>
+                    <code>body { font-weight: bolder; } / body { font-weight: 400; }</code></p>
+                    <p>Importante lembrar que: <br>
+                    - Weight = peso <br>
+                    - Width = largura. <br>
+                    - Height = altura </p>
+                <h4>font-style</h4>
+                    <p>Através do font-style podemos escolher o tipo de fonte normal e itálico. <br>
+                    <code> body { font-style: normal; } / body { font-style: italic; }.</code></p>
+                <h3>text-decoration</h3>
+                    <p>Uma das funções do text-decoration é deixar o texto sublinhado.
+                    <code>body { text-decoration: underline; }</code>
+                    </p>
+                <h3>Exemplo:</h3>
+                    <p><code>h1 { <br>
+                    font-family: 'Work Sans', sans-serif; <br>
+                    font-weight: bolder; <br>
+                    font-size: 1em; <br>
+                    font-style: italic;
+                    <br> }</code></p>
+                
+                        <h2>Shorthand</h2>
+                    <p>O shothand, é a "mãozinha" (vou ter dar uma mãozinha). <br>
+                    Veja como funciona o shorthand font na prática: <br>
+                    <em>- font-style -> font-weight -> font-size -> font-family</em> (deve-se seguir essa ordem)
+                    <br> <br>
+                    <code>h1 { <br>
+                    font: talic bolder 1em 'Work Sans', sans-serif; <br>
+                    }
+                    </code>
+                    </p>
+                        <h2>Importação de Fontes</h2>
+                <h3>@font-face</h3>
+                    <p>Ao importarmos uma fonte interna atravér do: <br><br>
+                    <code>
+                        @fonte-face { <br>
+                        font-family: 'capture_it'; <br>
+                        src: url('_fonts/capture_it.ttf') <em  style="text-decoration: underline;">format('truetype')</em>, url('_font/capture.it.otf') <em style="text-decoration: underline;">format('opentype')</em>;</code> <br>
+                    } <br><br>
+                    Na parte "format();", vimos o truetype e o opentype. O format define qual formato do arquivo, sendo: <br> <br>
+                    - opentype (otf) <br>
+                    - truetype (ttf) <br>
+                    - embedded-opentype <br>
+                    - truetype-aat (apple advanced typography) <br>
+                    - svg
+                    </p>
+                    <p>Site para detectar fontes em imagens: <a href="http://www.whatfontis.com/" target="_blank">whatfontis.com</a></p>
+            </div>
+        </main>
     <footer>
         <p>&copy; Todos os direitos reservados 2022 - <a href="http://www.github.com/marcosbarbosa-dev/" target="_blank">marcosbarbosadev</a></p>
     </footer>
