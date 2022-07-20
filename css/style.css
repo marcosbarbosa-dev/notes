@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .container {
@@ -65,6 +66,7 @@ nav ul {
 nav li {
     padding: 10px;
     border: 1px solid rgba(153, 153, 153, 0.281);
+    text-transform: uppercase;
 }
 nav li:hover {
     background-color: white;
@@ -78,8 +80,8 @@ nav li a {
     background-image: url('../imagens/background.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: right top;
-    background-attachment: fixed;
+    background-position: center center;
+    background-attachment: scroll;
     max-width: 100vw;
     height: 280px;
     margin-bottom: 30px;
@@ -174,6 +176,9 @@ footer a {
 @media (max-width:1100px) {
     .img {
         background-position: center center;
+    }
+    .nav-item {
+        text-transform: uppercase;
     }
     .nav-bar {
         padding: 5px;
