@@ -31,7 +31,9 @@
 }
 
 /* LOGO */
-
+.logo a {
+    text-decoration: none;
+}
 .logo {
     text-align: center;
     padding: 30px 0;
