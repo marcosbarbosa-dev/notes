@@ -123,6 +123,13 @@ main h3 {
     color: rgb(73, 73, 73);
     margin-bottom: 10px;
 }
+main h3.destaque {
+    color: white;
+    background-color: #6b6b6b;
+    padding: 5px 0px 5px 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
 .conteudo {
     background-color: white;
     box-shadow: 1px 1px 3px rgba(121, 121, 121, 0.384);
@@ -130,6 +137,22 @@ main h3 {
 }
 .conteudo p {
     padding: 0 10px 10px 10px;
+}
+main ul {
+    padding-left: 20px;
+}
+/* BOTÃO RETORNAR */
+.retornar {
+    width: 100px;
+    margin: 20px auto;
+}
+.retornar a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff5100;
+    padding: 10px;
+    border-radius: 30px;
+    text-align: center;
 }
 /* FOOTER */
 
