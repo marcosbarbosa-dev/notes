@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/pages-interna.css">
+    <title>DevNotes - JavaScript</title>
+</head>
+<body>
+<div class="container">
+<header>
+    <div class="topo">
+        <ul>
+            <li><a href="https://web.facebook.com/sn.marcosbarbosa/" target="_blank">Facebook</a></li>
+            <li><a href="http://www.instagram.com/sn.marcos/" target="_blank">Instagram</a></li>
+            <li><a href="estudos.html" target="_blank">Estudos</a></li>
+            <li><a href="http://www.github.com/marcosbarbosa-dev/" target="_blank">Github</a></li>
+        </ul>
+    </div>
+    <div class="logo">
+        <a href="../../index.html">
+            <h1><span>DEV</span>NOTES</h1>
+            <p>marcosbarbosa-dev</p>
+        </a>
+    </div>
+    <nav class="nav-bar">
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="../../index.html" target="_self">Home</a></li>
+            <li class="nav-item"><a href="../../html.html" target="_self">HTML</a></li>
+            <li class="nav-item"><a href="../../midias.html" target="_self">Mídias</a></li>
+            <li class="nav-item"><a href="../../css.html" target="_self">CSS</a></li>
+            <li class="nav-item"><a href="../../javascript.html" target="_self">JavaScript</a></li>
+            <li class="nav-item"><a href="../../cores.html" target="_self">Cores</a></li>
+            <li class="nav-item"><a href="../../tipografia.html" target="_self">Tipografia</a></li>
+        </ul>
+        <div class="hamburguer">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="conteudo">
+        <h1>OPERADORES DE JAVASCRIPT</h1>
+        <h2>OPERADORES DE JAVASCRIPT</h2>
+        <h3 class="destaque">ALGUNS TIPOS DE OPERADORES</h3>
+        <h4>ALGUNS TIPOS DE OPERADORES</h4>
+        <p>Aritméticos <br>
+            Atribuição<br>
+            Relacionais<br>
+            Lógicos<br>
+            Ternário
+        </p>
+
+        <h3>OPERADOR ARITMÉTICOS</h3>
+        <h4>OPERADOR ARITMÉTICOS</h4>
+        <p>
+            <strong>Usados para cálculos:</strong> <br> 
+            +   // Adição<br> 
+            -   // Subtração<br> 
+            *   // Multiplicação<br> 
+            /   // Divisão Real<br> 
+            %   // Divisão Inteira<br> 
+            **  // Potência (surgiu com ECMAScript)<br> <br> 
+            São chamados de operadores binários, pois precisam de dois operandos.<br> <br> 
+            <strong>EXEMPLO:</strong><br> 
+            5 + 2   // 7<br> 
+            5 - 2   // 3<br> 
+            5 * 2   // 10<br> 
+            5 / 2   // 2.5<br> 
+            5 % 2   // 1 (É o resto da divisão de 5 / 2)<br> 
+            5 ** 2  // 25 (5 ao quadrado)
+        </p>
+
+        <h3>ORDEM DE PRECEDÊNCIA</h3>
+        <h4>ORDEM DE PRECEDÊNCIA</h4>
+        <p>
+            Caso em uma conta, eu fizer 5 + 3 / 2, o resultado é igual a 6.5, já que a divisão vem antes da adição.<br><br>
+            Mas se eu quiser realmente realizar primeiro a adição e depois a divisão?<br><br>
+            Coloca-se a soma entre parenteses.<br>
+            Exemplo: (5 + 3) / 2 = 4<br>
+        </p>
+   
+        <p>
+            <strong>PRECEDÊCIA</strong> <br>
+            Como é a ordem de análise das expressões: <br>
+            ()<br>
+            **<br>
+            * / %<br>
+            + -
+        </p>
+        <h3>OPERADOR DE ATRIBUIÇÃO SIMPLES</h3>
+        <h4>OPERADOR SIMPLES</h4>
+        <p>
+            var a = 5 + 3 (8) // a varível 'a' recebe '=' o valor de 5 + 3. <br>
+            var b = a % 5 (8)<br>
+            var c = 5 * b ** 2 (45)<br>
+            var d = 10 - a / 2 (6)<br>
+            var e = 6 * 2 / d (2) // como ambos tem a mesma precedência, o que vem primeiro é calculado.<br>
+            var f = b % e + 4 / e (3)<br>
+            Os operadores de atribuição simples são os de variáveis
+        </p>
+            <h4>AUTO ATRIBUIÇÃO</h4>
+            <p>
+                var n = 3  // atribuição simples <br>
+                n = n + 4  // auto atribuilção<br><br>
+                Agora o 'n' deixará de valor 3 e comecará a valer 7.<br><br>
+            </p>
+
+            <h4>SIMPLIFICADO</h4>
+            <p>
+                n = n + 4  // auto atribuição<br>
+                n += 4 // simplificado<br><br>
+                Só serve se a mesma variável receber ela mesma mais o outro valor.<br>
+                N = N + ...
+            </p>
+            
+            <h3>OPERADOR DE INCREMENTO</h3>
+            <h4>OPERADOR DE INCREMENTO</h4>
+            <p>
+                Como no exemplo anterior de simplificação, se eu tenho: <br><br>
+                var x = 5  // atribuição simples<br>
+                x = x + 1  // auto atribuição<br>
+                x += 1     // auto atribuição simplificado<br>
+                x++        // operador de incremento<br><br>
+                Todos valores serão os mesmos<br><br>
+                <strong>EXEMPLO</strong>:<br><br>
+                var x = 5<br>
+                x = x + 1  // resultado: 6<br>
+                x++        // resultado: 6 incrementou um número)<br><br>
+                x = x - 1  // resultado: 4<br>
+                x--        // resultado: 4 (descrementou um número)
+            </p>
+
+            <h3>OPERADOR RELACIONAIS</h3>
+            <h4>OPERADOR RELACIONAIS</h4>
+            <p>
+                >   // maior que <br>
+                <   // menor que <br>
+                >=  // maior ou igual <br>
+                <=  // menor ou igual <br>
+                ==  // igual <br>
+                !=  // diferente <br><br>
+
+                5 >  2  //  true <br>
+                7 <  4  //  false <br>
+                8 >= 8  //  true <br>
+                9 <= 7  //  false <br>
+                5 == 5  //  true <br>
+                4 != 4  //  true <br><br>
+
+                O resultado dessas expressões serão sempre valores booleanos, ou seja, verdadeiro ou falso. <br><br>
+
+                Booleanos: true ou false
+            </p>
+
+            <h3>OPERADOR DE IDENTIDADE</h3>
+            <h4>OPERADOR DE IDENTIDADE</h4>
+            <p>
+                5 == 5   // true <br><br>
+
+                5 == '5' // true, pois o sinal de igualdade não testa o tipo, apenas analisa se o 5 tem o mesmo valor que o outro. Mesmo sendo de tipos diferentes, possuem a mesma grandeza. <br><br>
+
+                5 === '5' // false (operador de identidade ou de igualdade restrita), pois estamos testando se os dois 5 da direita são identidos (mesmo valor e mesmo tipo). Nesse caso, tem o mesmo valor mas não o mesmo tipo.<br><br>
+
+                5 === 5  // true
+            </p>
+
+            <h3>OPERADOR LÓGICO</h3>
+            <h4>OPERADOR LÓGICO</h4>
+            <p>
+                !   // negação / Exemplo: Quero qualquer caneta, menos azul. <br><br>
+
+                &   // conjunção / Exemplo: Quero uma caneta azul e preta, não serva só uma.<br><br>
+
+                ||  // disjunção / Exemplo: Quero uma caneta azul e uma vermelha, mas se eu receber só uma delas, tá ótimo. Mas se não me entregar nenhuma ou de uma cor que eu não queira, não serve.
+            </p>
+            
+            <h3>OPERADOR DE NEGAÇÃO</h3>
+            <h4>OPERADOR DE NEGAÇÃO</h4>
+            <p>
+                ! O 'não' // É tratado como operador unário, ele só possui um operando. Depois da exclamação, ou coloco o true ou o false. Ou coloco uma expressão que vai dar true ou false.
+            </p>
+
+            <h3>OPERADOR DE CONJUNÇÃO</h3>
+            <h4>OPERADOR DE CONJUNÇÃO</h4>
+            <p>
+                && // É um operador binário, nele tenho dois valores lógicos, um de cada lado. <br><br>
+
+                <strong>EXEMPLO:</strong><br>
+
+                true  && true  -> true
+                true  && false -> false
+                false && true  -> false
+                false && false -> false<br><br>
+
+                Só será verdadeiro se as duas forem verdadeiras.
+            </p>
+
+            <h3>OPERADOR DE DISJUNÇÃO</h3>
+            <h4>OPERADOR DE DISJUNÇÃO</h4>
+            <p>
+                |  // Operador binário, que dependendo da posição deles e do valor lógico, eu terei um valor lógico de resultados. <br><br>
+
+                <strong>EXEMPLO:</strong><br>
+
+                true  || true  -> true
+                true  || false -> true
+                false || true  -> true
+                false || false -> false<br><br>
+
+                Basta que apenas um seja verdadeiro para que a resposta seja verdadeira. Apenas se os forem falsos, aí sim o resultado será falso.<br><br>
+
+                <strong>ORDEM DE PRECEDÊNCIA</strong><br>
+
+                !<br>
+                &&<br>
+                ||<br><br>
+
+                <strong>EXEMPLOS DE EXPRESSÕES</strong><br>
+
+                idade >= 15 && idade <= 17        // a idade 'está entre' 15 'e' 17?<br>
+
+                estado == 'RJ' || estado == 'SP'  // o estado 'é' RJ 'ou' SP?<br>
+
+                salário > 1500 && sexo != 'M'     // o salário 'é maior que' 1500 e o diferente de masculino?<br>
+            </p>
+
+            <h3>OPERADOR TERNÁRIO</h3>
+            <h4>OPERADOR TERNÁRIO</h4>
+            <p>
+                ? <br>
+                : <br><br>
+
+                JUNTA 3 OPERANDOS<br>
+
+                teste ? true :<br><br>
+
+                <strong>EXEMPLO:</strong><br>
+
+                idade >= 18 ? 'de maior' : 'de menor'
+            </p>
+        <a href="../../javascript.html">
+            <div class="retornar">retornar</div>
+        </a>
+    </div>
+
+</main>
+<footer>
+    <p>&copy; Todos os direitos reservados 2022 - <a href="http://www.github.com/marcosbarbosa-dev/" target="_blank">marcosbarbosadev</a></p>
+</footer>
+</div>
+<script src="../../script.js"></script>
+</body>
+</html>

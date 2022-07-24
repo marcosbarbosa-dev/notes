@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+st<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/pages-interna.css">
+    <title>DevNotes - JavaScript</title>
+</head>
+<body>
+<div class="container">
+<header>
+    <div class="topo">
+        <ul>
+            <li><a href="https://web.facebook.com/sn.marcosbarbosa/" target="_blank">Facebook</a></li>
+            <li><a href="http://www.instagram.com/sn.marcos/" target="_blank">Instagram</a></li>
+            <li><a href="estudos.html" target="_blank">Estudos</a></li>
+            <li><a href="http://www.github.com/marcosbarbosa-dev/" target="_blank">Github</a></li>
+        </ul>
+    </div>
+    <div class="logo">
+        <a href="../../index.html">
+            <h1><span>DEV</span>NOTES</h1>
+            <p>marcosbarbosa-dev</p>
+        </a>
+    </div>
+    <nav class="nav-bar">
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="../../index.html" target="_self">Home</a></li>
+            <li class="nav-item"><a href="../../html.html" target="_self">HTML</a></li>
+            <li class="nav-item"><a href="../../midias.html" target="_self">Mídias</a></li>
+            <li class="nav-item"><a href="../../css.html" target="_self">CSS</a></li>
+            <li class="nav-item"><a href="../../javascript.html" target="_self">JavaScript</a></li>
+            <li class="nav-item"><a href="../../cores.html" target="_self">Cores</a></li>
+            <li class="nav-item"><a href="../../tipografia.html" target="_self">Tipografia</a></li>
+        </ul>
+        <div class="hamburguer">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="conteudo">
+        <h2>COMANDOS BÁSICOS</h2>
+            <h3 class="destaque">COMANDOS BÁSICOS</h3>
+            <h4>COMANDOS BÁSICOS</h4>
+            <p>window.alert('Olá, mundo!') - Emite mensagem na tela, <br>
+                window.confirm('Está gostando de JS?') - Emite mensagem de confirmação na tela. <br>
+                window.prompt('Qual é o seu nome?') - Emite pergunta na tela.</p>
+
+            <h3>ADICIONANDO O NOME A UMA VARIÁVEL</h3>
+            <p>Antes do código windows.prompt(''), podemos usar o 'var nome =', para que o que for digitado entre parenteses, vire uma variável chamada 'nome'. <br>
+            <strong>Exemplo</strong>: var nome = window.prompt('Qual é o seu nome?')</p>
+
+            <h3>CONCATENAÇÃO</h3>
+            <h4>CONCATENAÇÃO</h4>
+            <p>
+                O sinal de + é uma concatenação, usado para juntar uma coisa a outra. <br> <br>
+                <strong>Exemplo</strong>: <br>
+                var nome = window.prompt('Qual é o seu nome?') - respondo: Marcos <br>
+                windows.alert('Olá' + nome)
+
+                Isso aparecerá para o cliente como 'Olá Marcos', pois Marcos se tornou a variável de 'nome', e fora da aspas, adicionei através da concatenação, a variável ao 'Olá'.
+            </p>
+
+            <h3>CONVERSÕES DE STRING PARA NUMBER</h3>
+            <h4>CONVERSÕES DE STRING PARA NUMBER</h4>
+            <p>
+                <strong>Number.parseInt(n)</strong> - ou apenas .parseInt(n), converterá a string para um número inteiro. <br>
+                <strong>Number.parseFloat(n)</strong> - ou apenas .parseFloat(n), converterá a string para um número real, ou seja, um número com vírgula. <br>
+                Lembrando que devemos respeitar as letras maiúsculas e minúsculas. <br> <br>
+                <strong>EXEMPLO:</strong> <br>
+                var n1 = Number.parseInt(window.prompt('Digite um número:')) <br>
+                var n2 = Number.parseInt(window.prompt('Digite outro número:')) <br> <br>
+                Assim, a varíavel n1 e n2, irá receber o que vier do prompt, aonde está escrito para digitar o número, convertido para um número inteiro. <br> <br>
+                Caso não seja feita a conversão, o javascript verá os prompts como strings, e ao invés de em caso de somar as variáveis (caso tenha adicionado a função de adição e criado um alert para a resposta), dará a resposta como a junção de dois números.
+                Exemplo: 5+4 = 54.
+            </p>
+
+            <h3>CONVERSÕES DE STRING PARA NUMBER FACILITADO (ECMAScript)</h3>
+            <h4>CONVERSÕES DE STRING PARA NUMBER FACILITADO</h4>
+            <p>
+                Ao invés de usarmos o parseInt ou parseFloat, podemos usar apenas o Number(n), e o javascript descobrirá se é real ou inteiro. <br> <br>
+                <strong>EXEMPLO</strong>: <br>   
+                var n1 = Number(window.prompt('Digite um número:'))
+                var n2 = Number(window.prompt('Digite outro número:'))              
+                Mas ainda é válido usar o parseInt e parseFloat em algumas situações, caso queiramos forçar obrigatóriamente o resultado ser real ou inteiro.
+            </p>
+            
+            <h3>CONVERSÕES DE NUMBER PARA STRING</h3>
+            <h4>CONVERSÕES DE NUMBER PARA STRING</h4>
+            <p>
+                <strong>String(n)</strong> <br>
+                <strong>n.toString()</strong> <br> <br>
+                <strong>EXEMPLO</strong>: <br>
+                var n1 = Number(window.prompt('Digite um número:')) <br>
+                var n2 = Number(window.prompt('Digite outro número:')) <br>
+                var s = n1 + n2 <br> <br>
+                window.alert('A soma dos valores é ' + String(s)) <br>
+                    OU <br>
+                window.alert('A soma dos valores é ' + s.toString) 
+            </p>
+
+            <h3>TEMPLATE STRINGS</h3>
+            <h4>TEMPLATE STRINGS</h4>
+            <p>
+                Digamos que criamos 3 variáveis: <br>
+                var nome = 'Marcos' <br> 
+                var idade = 22 <br> 
+                var nota = 5.5 <br> <br> 
+                E queremos escrever a mensagem 'O aluno Marcos de 22 anos tirou nota 5.5'. Do jeito tradicional usaríamos o seguinte modo: <br> 
+                ('O aluno ' + nome + ' de ' + idade + ' anos tirou nota ' + nota) <br> <br> 
+                No Template String, para facilitar, usaremos deste modo: <br> 
+                (`O aluno ${nome} de ${idade} anos tirou ${nota}`) <br> 
+                Usando a crase para abrir e fechar. Ela é usada no template string. <br> 
+                O ${} é chamado de placeholder.
+            </p>
+
+            <h3>FORMATANDO STRINGS</h3>
+            <h4>FORMATANDO STRINGS</h4>
+            <p><strong>s.length</strong> // quantos caracteres a string tem <br>
+                <strong>s.toUpperCase()</strong> // tudo para 'MAIÚSCULAS'<br>
+                <strong>s.toLowerCase()</strong> // tudo para 'minúsculas'</p>
+           
+            <h3>OUTROS COMANDOS</h3>
+            <h4>OUTROS COMANDOS</h4>
+            <p><strong>document.write()</strong> // escreverá algo na tela</p>
+
+            <h3>TESTANDO NOVOS COMANDOS</h3>
+            <h4>TESTANDO NOVOS COMANDOS</h4>
+            <p>
+                var nome = window.prompt('Qual é o seu nome?') <br>
+                document.write(`Seu nome tem ${nome.length} tantas letras`) <br><br>
+                O que aconteceu é que, ao definir a variável nome, pedimos para que o JS escrevesse na tela a quantidade de caracteres que meu nome tem, através do .length <br> <br>
+                Podemos também usar tags HTML dentro do código. <br><br>
+                <strong>EXEMPLO:</strong><br>
+                var nome = window.prompt('Qual é o seu nome?')<br>
+                document.write(`&lth2&gt;Seu nome tem ${nome.length} tantas letras&lt;/h2&gt;`)<br><br>
+                OU<br><br>
+                var nome = window.prompt('Qual é o seu nome?')<br>
+                document.write(`Olá &lt;strong&gt;$<strong>{nome}</strong>&lt;/strong&gt;! Seu nome tem ${nome.length} tantas letras.`) <br>
+                document.write(`Seu nome em maiúsculo é ${nome.toUpperCase()}`)
+            </p>
+
+            <h3>FORMATANDO NÚMEROS</h3>
+            <h4>FORMATANDO NÚMEROS</h4>
+            <p>
+                .toFixed(n) // Em caso de números variáveis, podemos adicionar a quanitdade de casas decimáis. <br><br>
+                <strong>EXEMPLO:</strong><br>
+                var n1 = 1454.5 // n1 = 1454.5<br>
+                var n1 = 1454.5 // n1.toFixed(3) = 1454.500<br><br>
+                .toFixed(n).replace('.', ',') // Escolhi a quantidade de casas decimáis e fiz o replace (alterei) o ponto por vírgula.<br><br>
+                var n1 = 1454.5 // n1.toFixed(3).replace('.', ',') = 1454,500<br><br>
+                <strong>EXEMPLO DE CONVERSÃO PARA REAL</strong><br><br>
+                var n1 = 1454.5<br>
+                n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) <br>
+                // R$ 1.454,50
+            </p>
+        <a href="../../javascript.html">
+            <div class="retornar">retornar</div>
+        </a>
+    </div>
+
+</main>
+<footer>
+    <p>&copy; Todos os direitos reservados 2022 - <a href="http://www.github.com/marcosbarbosa-dev/" target="_blank">marcosbarbosadev</a></p>
+</footer>
+</div>
+<script src="../../script.js"></script>
+</body>
+</html>

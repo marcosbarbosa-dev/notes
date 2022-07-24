@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/pages-interna.css">
+    <title>DevNotes - JavaScript</title>
+</head>
+<body>
+<div class="container">
+<header>
+    <div class="topo">
+        <ul>
+            <li><a href="https://web.facebook.com/sn.marcosbarbosa/" target="_blank">Facebook</a></li>
+            <li><a href="http://www.instagram.com/sn.marcos/" target="_blank">Instagram</a></li>
+            <li><a href="estudos.html" target="_blank">Estudos</a></li>
+            <li><a href="http://www.github.com/marcosbarbosa-dev/" target="_blank">Github</a></li>
+        </ul>
+    </div>
+    <div class="logo">
+        <a href="../../index.html">
+            <h1><span>DEV</span>NOTES</h1>
+            <p>marcosbarbosa-dev</p>
+        </a>
+    </div>
+    <nav class="nav-bar">
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="../../index.html" target="_self">Home</a></li>
+            <li class="nav-item"><a href="../../html.html" target="_self">HTML</a></li>
+            <li class="nav-item"><a href="../../midias.html" target="_self">Mídias</a></li>
+            <li class="nav-item"><a href="../../css.html" target="_self">CSS</a></li>
+            <li class="nav-item"><a href="../../javascript.html" target="_self">JavaScript</a></li>
+            <li class="nav-item"><a href="../../cores.html" target="_self">Cores</a></li>
+            <li class="nav-item"><a href="../../tipografia.html" target="_self">Tipografia</a></li>
+        </ul>
+        <div class="hamburguer">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="conteudo">
+        <h2>DOCUMENT OBJECT MODEL (DOM)</h2>
+        <h3 class="destaque">DOCUMENT OBJECT MODEL (DOM)</h3>
+        <h4>DOCUMENT OBJECT MODEL (DOM)</h4>
+            <p>DOM é um modelo de objetos para documentos. É um conjunto de objetos dentro do seu navegador que dá acesso aos componentes internos do seu website.
+            </p>
+
+        <h3>ÁRVORE DOM</h3>
+        <h4>ÁRVORE DOM</h4>
+        <p>
+            Tudo dentro do JavaScript está dentro de 'window'. <br>
+            Dentro do window temos: location, document, history.<br>
+            location: diz qual é a localização do seu site, como, qual é página atual, qual é a url, qual foi a página anterior. <br>
+            document: documento atual. <br>
+            history: vai guardando de onde você veio, pra onde você vai. <br> <br>
+            Dentro do document temos o objeto: html (que é toda parte de html do site);<br><br>
+            Dentro de html temos dois filhos (child) head e body: cabeçalho e corpo.<br>
+            Vale notar que o head e body são filhos de html, já o html é o parent, um pai/mãe, para o head e body.<br><br>
+            Dentro de head temos todas tags que podemos colocar dentro do cabeçalho, como meta, title, etc...<br>
+            Dentro do body podemos ter diversas tags, como, h1, p, div, etc.<br>
+            Dentro de um parágrafo, por exemplo '&lt;p&gt;Nome &lt;strong&gt;<strong>completo</strong>&lt;/strong&gt; aqui&lt;/p&gt;', teremos um child, que é o strong.
+        </p>
+
+        <h3>SELECIONANDO A ÁRVORE DOM NO NAVEGADOR</h3>
+        <h4>SELECIONANDO A ÁRVORE DOM NO NAVEGADOR</h4>
+        <p>
+            <strong>Temos 5 marcas de acessos:</strong><br>
+            Por Marca (tag)   // getElementsByTagName() <br>
+            Por ID            // getElementById() <br>
+            Por Nome          // getElementByName() <br>
+            Por Classe        // getElementByClassName() <br>
+            Por Seletor (CSS) // querySelector()  //  querySelectorAll() // Recomendada
+        </p>
+        <p>
+            <strong>getElementsByTagName()</strong> <br>
+
+            <code>
+                &lt;p&gt;Aqui vai o resultado&lt;/p&gt; <br>
+                &lt;p&gt;Aprendendo a usar o &lt;strong>DOM&lt;/strong> em JavaScript.&lt;/p&gt;<br>
+                &lt;div&gt;Clique em mim&lt;/div&gt;<br>
+                &lt;script&gt;<br>
+                    var p1 = window.document.getElementsByTagName('p')[0]<br>
+                    window.document.write(p1.innerText)<br>
+                &lt;/script&gt;<br>
+            </code> <br>
+            Básicamente o que fiz foi criar uma variável 'p1', selecionar a tag p, e com os [] definir qual parágrafo seria do meu documento em HTML, no caso o 0 é o priemiro parágro, o 1 seria o segundo e assim sucessivamente. Após isso, com comando write 'innerText', pedi para que fosse escrito o que está escrito dentro do primeiro parágrafo na tela. O resultado seria: <br><br>
+            Aqui vai o resultado****<br>
+            Aprendendo a usar o DOM em JavaScript.<br>
+            Clique em mim<br>
+            Aqui vai o resultado****<br>
+        </p> <br>
+
+        <h4>OUTRO EXEMPLO:</h4>
+        <p>
+            var p1 = window.document.getElementsByTagName('p')[0] <br>
+            p1.style.color = 'red'<br><br>
+
+            Eu fiz com que o primeiro parágrafo (representado pelo número 0), mudasse a cor para vermelho. Caso eu queria que seja o segundo parágrafo, basta eu no lugar o 0 colocar 1.
+        </p> <br>
+        <p>
+            <strong>querySelector - RECOMENDADO</strong> <br>
+            var d = window.document.querySelector('div#msg') <br>
+            d.style.color = 'blue'
+        </p>
+        
+        <h3>EVENTOS DOM</h3>
+        <h4>EVENTOS DOM</h4>
+        <p>
+            Evento é tudo aquilo que pode acontecer com um elemento, sendo o mais comum, eventos de mouse. <br><br>
+
+            Quando entrarmos com o mouse dentro do elemento, que aqui chamarei de div, será disparado o evento 'mouseenter', e quando continuarmos movendo o mouse já dentro da div, será disparado o evento 'mousemove'. Quando clicarmos e segurarmos, teremos o disparo do evento 'mousedown', quando soltarmos o botão do mouse, teremos o evento 'mouseup'. Quando clicamos rapiamente e soltamos, temos o evento 'click', e quando retirarmos o mouse da div 'mouseout'.<br><br>
+
+            mouseenter  //  ao entrar com mouse em cima do elemento<br>
+            mousemove   //  ao mover o mouse dentro do elemento<br>
+            mousedown   //  ao clicar e segurar com mouse dentro do elemento<br>
+            mouseup     //  ao soltar o clique do mouse dentro do elemento<br>
+            click     //  ao clicar rapidamente com mouse dentro do elemento<br>
+            mouseout    //  ao retirar o mouse de cima do elemento<br><br>
+
+            Mais eventos em: <a href="https://developer.mozilla.org/pt-BR/docs/Web/Events" class="link" target="_blank">developer.mozilla.org</a>
+        </p>
+
+        <h3>FUNÇÃO</h3>
+        <h4>FUNÇÃO</h4>
+        <p>
+            Para entendermos como funciona os eventos, precisamos saber o que é uma função. <br><br>
+
+            FUNÇÃO em javascript é conjunto de códigos que vão ser executadas somente quando o evento ocorrer.<br><br>
+
+            Digamos que teremos 10 linhas de códigos, essas 10 linhas serão chamadas de bloco. Ele só ocorrerá por exemplo, quando eu clicar dentro da div. Para que isso aconteça, devemos colocar as linhas dentro de um bloco<br><br>
+
+            function ação(){<br>
+            BLOCO em java script fica entre chaves. E devemos nomear ele com uma function (função). E devemos também dar um nome para uma função, por exemplo 'function ação() {}'. E opcionalmente, podemos colocar dentro dos parenteses alguns parâmetros.<br>
+            }<br><br>
+
+            Os eventos podem ser configurados na parte HTML ou diretamente no javascript.
+        </p>
+        <a href="../../javascript.html">
+            <div class="retornar">retornar</div>
+        </a>
+    </div>
+
+</main>
+<footer>
+    <p>&copy; Todos os direitos reservados 2022 - <a href="http://www.github.com/marcosbarbosa-dev/" target="_blank">marcosbarbosadev</a></p>
+</footer>
+</div>
+<script src="../../script.js"></script>
+</body>
+</html>

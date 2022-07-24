@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/pages-interna.css">
+    <title>DevNotes - JavaScript</title>
+</head>
+<body>
+<div class="container">
+<header>
+    <div class="topo">
+        <ul>
+            <li><a href="https://web.facebook.com/sn.marcosbarbosa/" target="_blank">Facebook</a></li>
+            <li><a href="http://www.instagram.com/sn.marcos/" target="_blank">Instagram</a></li>
+            <li><a href="estudos.html" target="_blank">Estudos</a></li>
+            <li><a href="http://www.github.com/marcosbarbosa-dev/" target="_blank">Github</a></li>
+        </ul>
+    </div>
+    <div class="logo">
+        <a href="../../index.html">
+            <h1><span>DEV</span>NOTES</h1>
+            <p>marcosbarbosa-dev</p>
+        </a>
+    </div>
+    <nav class="nav-bar">
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="../../index.html" target="_self">Home</a></li>
+            <li class="nav-item"><a href="../../html.html" target="_self">HTML</a></li>
+            <li class="nav-item"><a href="../../midias.html" target="_self">Mídias</a></li>
+            <li class="nav-item"><a href="../../css.html" target="_self">CSS</a></li>
+            <li class="nav-item"><a href="../../javascript.html" target="_self">JavaScript</a></li>
+            <li class="nav-item"><a href="../../cores.html" target="_self">Cores</a></li>
+            <li class="nav-item"><a href="../../tipografia.html" target="_self">Tipografia</a></li>
+        </ul>
+        <div class="hamburguer">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="conteudo">
+        <h1>CONDIÇÕES EM JAVASCRIPT</h1>
+        <h2>CONDIÇÕES EM JAVASCRIPT</h2>
+            <h3>TIPOS DE CONDIÇÃO</h3>
+            <h4>Condição Simples</h4>
+            <p>
+                <code>
+                    if (condição) { <br>
+                        true <br>
+                    }
+                </code>
+            </p>
+            <h4>Condição Simples</h4>
+            <p>
+                <code>
+                    if (condição) { <br>
+                        true <br>
+                    } else { <br>
+                        false <br>
+                    }
+                </code>
+            </p>
+
+            <h3>EXEMPLO DE CONDIÇÃO SIMPLES</h3>
+            <h4>EXEMPLO DE CONDIÇÃO SIMPLES</h4>
+            <p>
+                <code>
+                    var vel = 59 <br>
+                    console.log(`A velocidade do seu carro é de ${vel}km/h`)<br>
+                    if (vel > 60) {<br>
+                        console.log('Você ultrapassou a velocidade permitida. MULTADO!')<br>
+                    }<br>
+                    console.log('Diriga sempre usando cinto de segurança!')<br><br>
+                    <strong>Resultado</strong>: <br>
+                    A velocidade do seu carro é de 59km/h<br>
+                    Diriga sempre usando cinto de segurança!
+                </code>
+            </p>
+
+            <h3>EXEMPLO DE CONDIÇÃO COMPOSTA</h3>
+            <h4>EXEMPLO DE CONDIÇÃO COMPOSTA</h4>
+            <p>
+                <code>
+                    var vel = 59 <br>
+                    console.log(`A velocidade do seu carro é de ${vel}km/h`) <br>
+                    if (vel > 60) { <br>
+                        console.log('Você ultrapassou a velocidade permitida. MULTADO!') <br>
+                    } else { <br>
+                    console.log('Você está dentro da velocidade permitida.') <br>
+                    } <br>
+                    console.log('Diriga sempre usando cinto de segurança!' <br><br>
+                </code>
+
+                <strong>Resultado</strong>: <br>
+                A velocidade do seu carro é de 59km/h <br>
+                Você está dentro da velocidade permitida. <br>
+                Diriga sempre usando cinto de segurança! 
+            </p>
+
+            <h4>OUTRO EXEMPLO</h4>
+            <p>
+                <code>
+                    var vel = 61 <br>
+                    console.log(`A velocidade do seu carro é de ${vel}km/h`) <br>
+                    if (vel > 62) { <br>
+                        console.log('Você ultrapassou a velocidade permitida. MULTADO!') <br>
+                    } else if (vel >= 60 && vel <= 62){ <br>
+                    console.log('Atenção! Você está um pouco acima do limite.') <br>
+                    } else { <br>
+                    console.log('Você está dentro do limite de velocidade') <br>
+                    }  <br>
+                    console.log('Dirija sempre usando o cinto de segurança!') <br><br>
+
+                    <strong>Resultado</strong>: <br>
+                    A velocidade do seu carro é de 61km/h<br>
+                    Atenção! Você está um pouco acima do limite.<br>
+                    Dirija sempre usando o cinto de segurança!
+                </code>
+            </p>
+
+            <h3>EXEMPLO DE CONDIÇÃO ANINHADA</h3>
+            <h4>EXEMPLO DE CONDIÇÃO ANINHADA</h4>
+                <p>
+                    <code>
+                        var agora = new Date() <br>
+                        var hora = agora.getHours() <br>
+                        console.log(`Agora são exatamente ${hora} horas.`) <br>
+                        if (hora >= 6 && hora <= 12) { <br>
+                            console.log('Bom dia!') <br>
+                        } else if(hora > 12 && hora <= 18) { <br>
+                            console.log('Boa tarde!') <br>
+                        } else if(hora > 0 && hora < 6){ <br>
+                            console.log('Boa madrugada!') <br>
+                        } else { <br>
+                            console.log('Boa noite!') <br>
+                        } <br><br>
+                    </code>
+                    São aquelas que tem o else if.
+                </p>
+
+            <h3>EXEMPLO DE CONDIÇÃO MÚLTIPLA</h3>
+            <h4>EXEMPLO DE CONDIÇÃO MÚLTIPLA</h4>
+                <p>
+                    Ela é usada pelo switch <br><br>
+                    switch (expressão){ <br>
+                        case valor 1: <br>
+                        'bloco' <br>
+                        break <br>
+                        case valor 2: <br>
+                        'bloco' <br>
+                        break	 <br>
+                        case valor 3: <br>
+                        'bloco' <br>
+                        break	 <br>
+                        default: <br>
+                        'bloco' <br>
+                        break	 <br>
+                    } <br> <br>
+                    O default serve para se caso dentro do switch nenhum dos valores forem aceitos, ele executa o default, como se fosse um else. <br><br>                     
+                    O break é obrigatório no final de cada bloco.<br><br> 
+                    O switch vai testar a expressão e resulte pro valor 2, então ele comandará tudo que estiver no bloco do valor 2 e bate no break e encerra o código. Caso não haja break, ele não encerrará o código, ele continuará no valor 3.<br><br> 
+                    <em>Exemplo no EX013.</em>
+                </p>
+
+
+        <a href="../../javascript.html">
+            <div class="retornar">retornar</div>
+        </a>
+    </div>
+
+</main>
+<footer>
+    <p>&copy; Todos os direitos reservados 2022 - <a href="http://www.github.com/marcosbarbosa-dev/" target="_blank">marcosbarbosadev</a></p>
+</footer>
+</div>
+<script src="../../script.js"></script>
+</body>
+</html>

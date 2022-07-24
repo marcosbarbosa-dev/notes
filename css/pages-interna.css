@@ -113,22 +113,36 @@ main h1 {
     box-shadow: 1px 1px 2px rgba(121, 121, 121, 0.384);
 }
 main h2 {
-    background-color: #969696;
+    background-color: #3d3d3d;
     color: white;
-    padding: 7px 10px;
-    margin: 10px 0;
+    padding: 2px 10px;
+    margin-top: 15px;
+    font-size: 19px;
+    border-radius: 10px 3px 0px 0px;
 }
 main h3 {
-    padding: 10px 0px 0px 10px;
-    color: rgb(73, 73, 73);
-    margin-bottom: 10px;
+    background-color: #969696;
+    color: white;
+    padding: 3px 10px 3px 20px;
+    margin: 15px 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 10px 3px 10px 3px;
 }
 main h3.destaque {
+    background-color: #969696;
     color: white;
-    background-color: #6b6b6b;
-    padding: 5px 0px 5px 30px;
-    font-size: 15px;
+    padding: 3px 10px 3px 20px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 14px;
     text-transform: uppercase;
+    border-radius: 0px 0px 10px 3px;
+}
+main h4 {
+    text-transform: uppercase;
+    padding-left: 20px;
+    margin-bottom: 4px;
 }
 .conteudo {
     background-color: white;
@@ -136,23 +150,30 @@ main h3.destaque {
     padding: 15px;
 }
 .conteudo p {
-    padding: 0 10px 10px 10px;
+    padding: 0 10px 10px 20px;
+}
+.conteudo span {
+    color: red;
 }
 main ul {
-    padding-left: 20px;
+    padding-left: 40px;
 }
 /* BOTÃO RETORNAR */
-.retornar {
-    width: 100px;
-    margin: 20px auto;
-}
-.retornar a {
-    text-decoration: none;
-    color: #fff;
-    background-color: #ff5100;
-    padding: 10px;
-    border-radius: 30px;
+.retornar{
     text-align: center;
+    padding: 7px 0;
+    margin: 12px 10px 0px 10px;
+    background-color: #383838;
+    font-variant: small-caps;
+    border-radius: 10px 3px 10px 3px;
+}
+.conteudo a{
+    color: #fff;
+    text-decoration: none;
+}
+a.link {
+    color: black;
+    text-decoration: underline;
 }
 /* FOOTER */
 
